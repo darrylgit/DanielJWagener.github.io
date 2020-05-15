@@ -28,11 +28,7 @@ $windy-day: #4f57aa;
 
 #about {
   position: relative;
-  background-image: linear-gradient(
-      to right,
-      rgba(190, 226, 231, 0.8),
-      rgba(190, 226, 231, 0.8)
-    ),
+  background-image: linear-gradient(to right, $rain-overlay, $rain-overlay),
     url(../img/andaz.jpg);
   background-size: cover;
   min-height: 550px;
@@ -48,8 +44,6 @@ $windy-day: #4f57aa;
   p {
     font-weight: 400;
     font-size: 1.5em;
-    //background-color: rgba(266, 266, 266, 0.5);
-    //padding: 5px;
   }
 }
 
@@ -77,6 +71,9 @@ $windy-day: #4f57aa;
 
 #contact {
   background-color: $dark-motion;
+
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
 
   h2 {
     color: #fff;
