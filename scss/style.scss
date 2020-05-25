@@ -12,7 +12,7 @@ $windy-day: #4f57aa;
   box-shadow: 2px 2px 5px $rain;
 
   .navbar-brand {
-    //color: $dark-motion;
+    color: $dark-motion;
     border-top: 5px $rain solid;
 
     :hover {
@@ -27,16 +27,16 @@ $windy-day: #4f57aa;
 }
 
 #about {
-  position: relative;
   background-image: linear-gradient(to right, $rain-overlay, $rain-overlay),
     url(../img/andaz.jpg);
   background-size: cover;
-  min-height: 550px;
-  padding-top: 100px;
+  padding: 100px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
-  #profile {
+  color: $dark-motion;
+
+  #profile-pic {
     border-radius: 5px;
     border: 2px $silver-lining solid;
   }
@@ -45,35 +45,62 @@ $windy-day: #4f57aa;
     font-weight: 400;
     font-size: 1.5em;
   }
+
+  .row {
+    margin-bottom: 70px;
+  }
 }
 
-#portfolio {
+#projects {
+  padding: 100px 0;
+
+  .row {
+    margin-bottom: 70px;
+  }
+
   h2 {
     color: $dark-motion;
+    margin-bottom: 0;
   }
 
   .card {
     border-radius: 5px;
     border: 1px $silver-lining solid;
-  }
+    background-color: rgba($rain, 0.15);
+    color: $dark-motion;
+    margin: 70px 20px 0 20px;
 
-  i {
-    font-size: 32px;
-  }
+    a {
+      color: $dark-motion;
 
-  i:hover {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+      :visited {
+        color: $dark-motion;
+      }
+
+      i {
+        font-size: 32px;
+      }
+
+      i:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+      }
+    }
   }
 }
 
 #contact {
   background-color: $dark-motion;
+  padding: 80px 0 50px 0;
 
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+
+  .row {
+    margin-top: 100px;
+  }
 
   h2 {
     color: #fff;
@@ -129,5 +156,13 @@ $windy-day: #4f57aa;
 @media (max-width: 767.98px) {
   #about {
     text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #about {
+    .row {
+      margin-bottom: 40px;
+    }
   }
 }

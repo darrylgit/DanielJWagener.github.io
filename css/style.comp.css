@@ -4,6 +4,7 @@
   opacity: 0.9;
   box-shadow: 2px 2px 5px #bee2e7; }
   .navbar .navbar-brand {
+    color: #454857;
     border-top: 5px #bee2e7 solid; }
     .navbar .navbar-brand :hover {
       color: #72818b; }
@@ -12,40 +13,53 @@
     padding-right: 1.4rem; }
 
 #about {
-  position: relative;
   background-image: linear-gradient(to right, rgba(190, 226, 231, 0.8), rgba(190, 226, 231, 0.8)), url(../img/andaz.jpg);
   background-size: cover;
-  min-height: 550px;
-  padding-top: 100px;
+  padding: 100px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
-  #about #profile {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  color: #454857; }
+  #about #profile-pic {
     border-radius: 5px;
     border: 2px #72818b solid; }
   #about p {
     font-weight: 400;
     font-size: 1.5em; }
+  #about .row {
+    margin-bottom: 70px; }
 
-#portfolio h2 {
-  color: #454857; }
-
-#portfolio .card {
-  border-radius: 5px;
-  border: 1px #72818b solid; }
-
-#portfolio i {
-  font-size: 32px; }
-
-#portfolio i:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2); }
+#projects {
+  padding: 100px 0; }
+  #projects .row {
+    margin-bottom: 70px; }
+  #projects h2 {
+    color: #454857;
+    margin-bottom: 0; }
+  #projects .card {
+    border-radius: 5px;
+    border: 1px #72818b solid;
+    background-color: rgba(190, 226, 231, 0.15);
+    color: #454857;
+    margin: 70px 20px 0 20px; }
+    #projects .card a {
+      color: #454857; }
+      #projects .card a :visited {
+        color: #454857; }
+      #projects .card a i {
+        font-size: 32px; }
+      #projects .card a i:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); }
 
 #contact {
   background-color: #454857;
+  padding: 80px 0 50px 0;
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); }
+  #contact .row {
+    margin-top: 100px; }
   #contact h2 {
     color: #fff; }
   #contact p,
@@ -81,3 +95,7 @@
 @media (max-width: 767.98px) {
   #about {
     text-align: center; } }
+
+@media (max-width: 991.98px) {
+  #about .row {
+    margin-bottom: 40px; } }
