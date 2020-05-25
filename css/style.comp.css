@@ -28,26 +28,26 @@
   #about .row {
     margin-bottom: 70px; }
 
-#projects {
+#portfolio {
   padding: 100px 0; }
-  #projects .row {
+  #portfolio .row {
     margin-bottom: 70px; }
-  #projects h2 {
+  #portfolio h2 {
     color: #454857;
     margin-bottom: 0; }
-  #projects .card {
+  #portfolio .card {
     border-radius: 5px;
     border: 1px #72818b solid;
     background-color: rgba(190, 226, 231, 0.15);
     color: #454857;
     margin: 70px 20px 0 20px; }
-    #projects .card a {
+    #portfolio .card a {
       color: #454857; }
-      #projects .card a :visited {
+      #portfolio .card a :visited {
         color: #454857; }
-      #projects .card a i {
+      #portfolio .card a i {
         font-size: 32px; }
-      #projects .card a i:hover {
+      #portfolio .card a i:hover {
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
         -ms-transform: scale(1.2);
