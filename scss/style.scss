@@ -9,6 +9,7 @@ $windy-day: #4f57aa;
 // Colors from materialpalette.com (Blue + Teal)
 $color-primary: #2196f3;
 $color-primary-dark: #1976d2;
+$color-primary-dark-overlay: rgba($color-primary-dark, 0.8);
 $color-primary-light: #bbdefb;
 $color-white: #fff;
 $color-accent: #009688;
@@ -16,45 +17,95 @@ $color-text-primary: #212121;
 $color-text-secondary: #757575;
 $color-divider: #bdbdbd;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar {
-  background: #fff;
-  opacity: 0.9;
-  box-shadow: 2px 2px 5px $rain;
+  background-color: transparent;
+  opacity: 1;
 
-  .navbar-brand {
-    color: $dark-motion;
-    border-top: 5px $rain solid;
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around !important;
 
-    :hover {
-      color: $silver-lining;
+    .navbar-brand {
+      color: $dark-motion;
+      border-top: 5px $rain solid;
+
+      :hover {
+        color: $silver-lining;
+      }
     }
-  }
 
-  .nav-item {
-    font-size: 1.4rem;
-    padding-right: 1.4rem;
+    .nav-item {
+      font-size: 1.4rem;
+      // padding-right: 1.4rem;
+
+      .nav-link {
+        color: $color-white;
+      }
+    }
   }
 }
 
+// HERO
 #about {
-  background-image: linear-gradient(to right, $rain-overlay, $rain-overlay),
-    url(../img/andaz.jpg);
+  // Image by David Mark from Pixabay
+  background-image: linear-gradient(
+      to right,
+      $color-primary-dark-overlay,
+      $color-primary-dark-overlay
+    ),
+    url(../img/hong-kong-1990268_1920.jpg);
   background-size: cover;
   padding: 100px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
-  color: $dark-motion;
+  height: 125vh;
+
+  color: $color-white;
+
+  .container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hero {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .tagline {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        li {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 
   #profile-pic {
     border-radius: 5px;
     border: 2px $silver-lining solid;
   }
 
-  p {
-    font-weight: 400;
-    font-size: 1.5em;
-  }
+  // p {
+  //   font-weight: 400;
+  //   font-size: 1.5em;
+  // }
 
   .row {
     margin-bottom: 70px;

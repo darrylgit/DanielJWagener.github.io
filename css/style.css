@@ -13,7 +13,7 @@
     padding-right: 1.4rem; }
 
 #about {
-  background-image: linear-gradient(to right, rgba(190, 226, 231, 0.8), rgba(190, 226, 231, 0.8)), url(../img/andaz.jpg);
+  background-image: linear-gradient(to left, rgba(190, 226, 231, 0.8), rgba(190, 226, 231, 0.8)), url(../img/hong-kong-1990268_1920.jpg);
   background-size: cover;
   padding: 100px 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -61,7 +61,8 @@
   #contact .row {
     margin-top: 100px; }
   #contact h2 {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 35px; }
   #contact p,
   #contact .btn {
     font-size: 1.5em; }
