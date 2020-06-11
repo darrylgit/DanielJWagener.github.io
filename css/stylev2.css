@@ -1,4 +1,12 @@
 /*Colors from Blue Hippopotamus by LJK http://www.colourlovers.com/palette/149132/Blue_Hippopotamus */
+@keyframes moveInHero {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -76,7 +84,8 @@ body {
     #about .container .hero {
       width: 100%;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      animation: moveInHero 1s ease-out; }
       #about .container .hero .tagline {
         width: 100%;
         display: flex;
