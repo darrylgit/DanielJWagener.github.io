@@ -1,5 +1,5 @@
 // HERO
-#about {
+.hero {
   // Image by David Mark from Pixabay
   // https://pixabay.com/photos/hong-kong-city-urban-skyscrapers-1990268/
   background-image: linear-gradient(
@@ -17,28 +17,24 @@
 
   color: $color-white;
 
-  .container {
+  .hero__container {
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    .hero {
+    .hero__row {
       width: 100%;
       display: flex;
       justify-content: center;
 
-      .tagline {
+      .hero__tagline {
         width: 100%;
         display: flex;
         flex-direction: row;
         list-style: none;
         justify-content: space-around;
         margin-top: 2rem;
-
-        li {
-          font-size: 3.2rem;
-        }
       }
 
       animation: moveInHero 1s ease-out;

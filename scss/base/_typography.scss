@@ -1,0 +1,17 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-text-primary;
+}
+
+.hero {
+  &__name {
+    font-size: 7rem;
+    text-align: center;
+  }
+
+  &__tagline li {
+    font-size: 3.2rem;
+  }
+}
