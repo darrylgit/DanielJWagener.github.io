@@ -9,6 +9,24 @@
 html {
   // defines 1rem
   font-size: 62.5%;
+
+  ::-webkit-scrollbar {
+    width: 1.2rem;
+  }
+
+  ::-webkit-scrollbar-track:vertical {
+    background-color: $color-text-secondary;
+    padding: 1px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    border-radius: 0.6rem;
+    background-color: $color-primary-light;
+
+    &:active {
+      background-color: $color-primary-light-active;
+    }
+  }
 }
 
 body {

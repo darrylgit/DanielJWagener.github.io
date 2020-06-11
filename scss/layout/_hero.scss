@@ -17,39 +17,34 @@
 
   color: $color-white;
 
-  .hero__container {
+  &__container {
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
 
-    .hero__row {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-      .hero__tagline {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-around;
-        margin-top: 2rem;
-      }
+    animation: moveInHero 1s ease-out;
+  }
 
-      animation: moveInHero 1s ease-out;
-    }
+  &__tagline {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 2rem;
   }
 
   #profile-pic {
     border-radius: 5px;
     border: 2px $silver-lining solid;
   }
-
-  // p {
-  //   font-weight: 400;
-  //   font-size: 1.5em;
-  // }
 
   .row {
     margin-bottom: 70px;
