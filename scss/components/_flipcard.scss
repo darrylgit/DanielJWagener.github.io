@@ -3,7 +3,7 @@
   perspective: 200rem;
   -moz-perspective: 200rem;
   position: relative;
-  width: 40rem;
+  width: 45%;
   height: $card-height;
   margin-bottom: 5rem;
 
@@ -20,13 +20,15 @@
     overflow: hidden;
     // box-shadow: ?
 
-    // &--front {
-    //   will-change: opacity;
-    // }
+    &--front {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     &--back {
       transform: rotateY(180deg);
-      background-color: $color-accent;
+      background-color: $color-secondary;
     }
   }
 
@@ -40,17 +42,16 @@
 
   .project-image {
     background-size: cover;
-    background-blend-mode: hue;
 
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 101%;
 
     &--1 {
       background-image: linear-gradient(
           to right bottom,
-          $color-primary,
-          $color-primary-dark
+          $color-primary-dark-overlay,
+          $color-primary-light-overlay
         ),
         url('../../img/geckorello.png');
     }
@@ -58,8 +59,8 @@
     &--2 {
       background-image: linear-gradient(
           to right bottom,
-          $color-accent,
-          $color-accent
+          $color-secondary-dark-overlay,
+          $color-secondary-light-overlay
         ),
         url('../../img/calculator.png');
     }
@@ -67,8 +68,8 @@
     &--3 {
       background-image: linear-gradient(
           to right bottom,
-          $color-primary,
-          $color-primary-dark
+          $color-secondary-dark-overlay,
+          $color-secondary-light-overlay
         ),
         url('../../img/mapbox.png');
     }
@@ -76,8 +77,8 @@
     &--4 {
       background-image: linear-gradient(
           to right bottom,
-          $color-accent,
-          $color-accent
+          $color-primary-dark-overlay,
+          $color-primary-light-overlay
         ),
         url('../../img/blender.png');
     }

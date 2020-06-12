@@ -10,12 +10,20 @@ $windy-day: #4f57aa;
 
 // Colors from materialpalette.com (Blue + Teal)
 $color-primary: #2196f3;
+$color-primary-overlay: rgba($color-primary, 0.8);
 $color-primary-dark: #1976d2;
 $color-primary-dark-overlay: rgba($color-primary-dark, 0.8);
 $color-primary-light: #bbdefb;
+$color-primary-light-overlay: rgba($color-primary-light, 0.6);
 $color-primary-light-active: #cde7fc;
+$color-secondary: #009688;
+$color-secondary-overlay: rgba(#009688, 0.8);
+$color-secondary-dark: #00796b;
+$color-secondary-dark-overlay: rgba($color-secondary-dark, 0.8);
+$color-secondary-light: #b2dfdb;
+$color-secondary-light-overlay: rgba($color-secondary-light, 0.6);
 $color-white: #fff;
-$color-accent: #009688;
+
 $color-text-primary: #212121;
 $color-text-secondary: #757575;
 $color-divider: #bdbdbd;

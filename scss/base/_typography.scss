@@ -15,3 +15,11 @@ body {
     font-size: 3.2rem;
   }
 }
+
+.flipcard {
+  &__name {
+    color: $color-white;
+    font-size: 5rem;
+    text-align: center;
+  }
+}
