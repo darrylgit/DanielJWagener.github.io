@@ -18,6 +18,7 @@
     backface-visibility: hidden;
     border-radius: 1rem;
     overflow: hidden;
+    padding: 2rem;
     // box-shadow: ?
 
     &--front {
@@ -28,7 +29,16 @@
 
     &--back {
       transform: rotateY(180deg);
-      background-color: $color-secondary;
+
+      &--1,
+      &--4 {
+        background-color: $color-primary-light;
+      }
+
+      &--2,
+      &--3 {
+        background-color: $color-secondary-light;
+      }
     }
   }
 

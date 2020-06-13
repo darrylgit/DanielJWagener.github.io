@@ -22,4 +22,9 @@ body {
     font-size: 5rem;
     text-align: center;
   }
+
+  &__description {
+    font-size: 2rem;
+    color: $color-text-primary;
+  }
 }

@@ -48,6 +48,10 @@ body {
   font-size: 5rem;
   text-align: center; }
 
+.flipcard__description {
+  font-size: 2rem;
+  color: #212121; }
+
 .flipcard {
   perspective: 200rem;
   -moz-perspective: 200rem;
@@ -65,14 +69,18 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 1rem;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 2rem; }
     .flipcard__side--front {
       display: flex;
       justify-content: center;
       align-items: center; }
     .flipcard__side--back {
-      transform: rotateY(180deg);
-      background-color: #009688; }
+      transform: rotateY(180deg); }
+      .flipcard__side--back--1, .flipcard__side--back--4 {
+        background-color: #bbdefb; }
+      .flipcard__side--back--2, .flipcard__side--back--3 {
+        background-color: #b2dfdb; }
   .flipcard:hover .flipcard__side--front {
     transform: rotateY(-180deg); }
   .flipcard:hover .flipcard__side--back {
