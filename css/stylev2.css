@@ -43,6 +43,12 @@ body {
 .hero__tagline li {
   font-size: 3.2rem; }
 
+.about__description {
+  font-size: 2.2rem; }
+  .about__description--emphasis {
+    font-size: 4rem;
+    line-height: 0rem; }
+
 .flipcard__name {
   color: #fff;
   font-size: 5rem;
@@ -132,6 +138,25 @@ body {
     .navbar .nav-item .nav-link {
       color: #fff; }
 
+.about {
+  background-color: #bdbdbd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50vh 5rem 25vh 5rem;
+  height: 125vh;
+  margin-top: -50vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
+  .about__headshot {
+    width: 25rem;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.4); }
+  .about__description {
+    width: 60%;
+    margin-left: 2rem; }
+
 #contact {
   background-color: #454857;
   padding: 80px 0 50px 0;
@@ -174,6 +199,8 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   height: 125vh;
+  z-index: 2;
+  position: relative;
   color: #fff; }
   .hero__container {
     height: 80vh;

@@ -1,0 +1,24 @@
+.about {
+  background-color: $color-divider;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50vh 5rem 25vh 5rem;
+  height: 125vh;
+  margin-top: -50vh;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+
+  &__headshot {
+    width: 25rem;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 1.5rem 4rem rgba($color-text-primary, 0.4);
+  }
+
+  &__description {
+    width: 60%;
+    margin-left: 2rem;
+  }
+}

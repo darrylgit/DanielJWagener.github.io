@@ -16,6 +16,17 @@ body {
   }
 }
 
+.about {
+  &__description {
+    font-size: 2.2rem;
+
+    &--emphasis {
+      font-size: 4rem;
+      line-height: 0rem;
+    }
+  }
+}
+
 .flipcard {
   &__name {
     color: $color-white;
