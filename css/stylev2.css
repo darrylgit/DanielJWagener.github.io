@@ -145,6 +145,17 @@ body {
           border-radius: 0 0 1rem 1rem; }
       .flipcard:hover .flipcard__side--front {
         transform: rotateY(0); } }
+  @media only screen and (max-width: 640px) {
+    .flipcard {
+      width: 80%; }
+      .flipcard--1 {
+        order: 1; }
+      .flipcard--2 {
+        order: 2; }
+      .flipcard--3 {
+        order: 4; }
+      .flipcard--4 {
+        order: 3; } }
 
 .navbar {
   background-color: transparent;

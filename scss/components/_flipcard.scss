@@ -134,4 +134,24 @@
       transform: rotateY(0);
     }
   }
+
+  @media only screen and (max-width: 640px) {
+    width: 80%;
+
+    &--1 {
+      order: 1;
+    }
+
+    &--2 {
+      order: 2;
+    }
+
+    &--3 {
+      order: 4;
+    }
+
+    &--4 {
+      order: 3;
+    }
+  }
 }
