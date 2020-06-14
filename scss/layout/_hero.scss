@@ -1,4 +1,3 @@
-// HERO
 .hero {
   // Image by David Mark from Pixabay
   // https://pixabay.com/photos/hong-kong-city-urban-skyscrapers-1990268/
@@ -29,6 +28,7 @@
   &__row {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     animation: moveInHero 1s ease-out;
@@ -41,15 +41,25 @@
     list-style: none;
     justify-content: space-around;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  #profile-pic {
-    border-radius: 5px;
-    border: 2px $silver-lining solid;
+  &__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
   }
 
-  .row {
-    margin-bottom: 70px;
+  &__link {
+    font-size: 4rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    a {
+      color: $color-white;
+    }
   }
 }
 

@@ -210,6 +210,7 @@ body {
   .hero__row {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     animation: moveInHero 1s ease-out; }
   .hero__tagline {
@@ -218,12 +219,18 @@ body {
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
-    margin-top: 2rem; }
-  .hero #profile-pic {
-    border-radius: 5px;
-    border: 2px #72818b solid; }
-  .hero .row {
-    margin-bottom: 70px; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .hero__links {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+  .hero__link {
+    font-size: 4rem; }
+    .hero__link:not(:last-child) {
+      margin-right: 3rem; }
+    .hero__link a {
+      color: #fff; }
 
 @media (max-width: 354.98px) {
   .navbar-brand h1 {
