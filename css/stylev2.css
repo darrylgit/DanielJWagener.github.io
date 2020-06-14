@@ -185,12 +185,13 @@ body {
       display: inline-block; }
       #contact ul li i {
         color: white;
-        font-size: 4.8rem; }
-      #contact ul li i:hover {
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2); }
+        font-size: 4.8rem;
+        transition: transform 0.2s; }
+        #contact ul li i:hover {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: scale(1.1) translateZ(0);
+          text-decoration: none; }
 
 .hero {
   background-image: linear-gradient(to right, rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8)), url(../img/hong-kong-1990268_1920.jpg);

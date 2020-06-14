@@ -41,12 +41,19 @@
       i {
         color: white;
         font-size: 4.8rem;
-      }
-      i:hover {
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
+
+        transition: transform 0.2s;
+
+        &:hover {
+          // backface-visibility and translateZ attempt to fix blurriness during transition.
+          // It still looks blurry on my machine, but maybe it'll look better on machines with
+          // better graphics cards
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transform: scale(1.1) translateZ(0);
+
+          text-decoration: none;
+        }
       }
     }
   }
