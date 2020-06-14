@@ -55,9 +55,11 @@ body {
 .flipcard__link {
   color: #212121;
   font-size: 2.5rem;
-  transition: transform 0.5s; }
+  transition: transform 0.2s; }
   .flipcard__link:hover {
-    transform: scale(1.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: scale(1.1) translateZ(0);
     text-decoration: none; }
 
 .flipcard {

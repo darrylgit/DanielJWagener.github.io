@@ -31,10 +31,16 @@ body {
   &__link {
     color: $color-text-primary;
     font-size: 2.5rem;
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 
     &:hover {
-      transform: scale(1.1);
+      // backface-visibility and translateZ attempt to fix blurriness during transition.
+      // It still looks blurry on my machine, but maybe it'll look better on machines with
+      // better graphics cards
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: scale(1.1) translateZ(0);
+
       text-decoration: none;
     }
   }
