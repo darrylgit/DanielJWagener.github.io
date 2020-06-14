@@ -113,9 +113,7 @@ body {
     margin-bottom: 1rem; }
   .flipcard .project-image {
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 101%; }
+    background-position: center; }
     .flipcard .project-image--1 {
       background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/geckorello.png"); }
     .flipcard .project-image--2 {
@@ -124,6 +122,25 @@ body {
       background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/mapbox.png"); }
     .flipcard .project-image--4 {
       background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/blender.png"); }
+  @media only screen and (hover: none) {
+    .flipcard {
+      height: 60rem;
+      border-radius: 1rem;
+      box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.25); }
+      .flipcard__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        border-radius: 0; }
+        .flipcard__side--front {
+          height: 40%;
+          border-radius: 10px 10px 0 0; }
+        .flipcard__side--back {
+          height: 60%;
+          transform: rotateY(0);
+          border-radius: 0 0 1rem 1rem; }
+      .flipcard:hover .flipcard__side--front {
+        transform: rotateY(0); } }
 
 .navbar {
   background-color: transparent;
