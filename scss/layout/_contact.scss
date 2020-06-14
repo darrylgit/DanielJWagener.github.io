@@ -54,6 +54,12 @@
 
           text-decoration: none;
         }
+
+        @media only screen and (hover: none) {
+          &:hover {
+            transform: scale(1);
+          }
+        }
       }
     }
   }

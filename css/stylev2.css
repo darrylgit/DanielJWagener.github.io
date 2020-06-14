@@ -67,6 +67,10 @@ body {
     backface-visibility: hidden;
     transform: scale(1.1) translateZ(0);
     text-decoration: none; }
+  @media only screen and (hover: none) {
+    .flipcard__link:hover {
+      transform: scale(1);
+      color: #212121; } }
 
 .flipcard {
   perspective: 200rem;
@@ -209,6 +213,9 @@ body {
           backface-visibility: hidden;
           transform: scale(1.1) translateZ(0);
           text-decoration: none; }
+        @media only screen and (hover: none) {
+          #contact ul li i:hover {
+            transform: scale(1); } }
 
 .hero {
   background-image: linear-gradient(to right, rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8)), url(../img/hong-kong-1990268_1920.jpg);
@@ -255,6 +262,9 @@ body {
       margin-right: 3rem; }
     .hero__link a {
       color: #fff; }
+    @media only screen and (hover: none) {
+      .hero__link:hover {
+        transform: scale(1); } }
 
 @media (max-width: 354.98px) {
   .navbar-brand h1 {

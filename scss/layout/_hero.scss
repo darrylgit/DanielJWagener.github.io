@@ -73,6 +73,12 @@
     a {
       color: $color-white;
     }
+
+    @media only screen and (hover: none) {
+      &:hover {
+        transform: scale(1);
+      }
+    }
   }
 }
 
