@@ -52,6 +52,14 @@ body {
   font-size: 2rem;
   color: #212121; }
 
+.flipcard__link {
+  color: #212121;
+  font-size: 2.5rem;
+  transition: transform 0.5s; }
+  .flipcard__link:hover {
+    transform: scale(1.1);
+    text-decoration: none; }
+
 .flipcard {
   perspective: 200rem;
   -moz-perspective: 200rem;
@@ -70,13 +78,18 @@ body {
     backface-visibility: hidden;
     border-radius: 1rem;
     overflow: hidden;
-    padding: 2rem; }
+    padding: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba(33, 33, 33, 0.25); }
     .flipcard__side--front {
       display: flex;
       justify-content: center;
       align-items: center; }
     .flipcard__side--back {
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
       .flipcard__side--back--1, .flipcard__side--back--4 {
         background-color: #bbdefb; }
       .flipcard__side--back--2, .flipcard__side--back--3 {
@@ -85,6 +98,11 @@ body {
     transform: rotateY(-180deg); }
   .flipcard:hover .flipcard__side--back {
     transform: rotateY(0); }
+  .flipcard__links-container {
+    display: flex;
+    flex-direction: column; }
+  .flipcard__link:not(:last-child) {
+    margin-bottom: 1rem; }
   .flipcard .project-image {
     background-size: cover;
     background-position: center;

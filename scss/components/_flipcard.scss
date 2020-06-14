@@ -19,7 +19,7 @@
     border-radius: 1rem;
     overflow: hidden;
     padding: 2rem;
-    // box-shadow: ?
+    box-shadow: 0 1.5rem 4rem rgba($color-text-primary, 0.25);
 
     &--front {
       display: flex;
@@ -29,6 +29,10 @@
 
     &--back {
       transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
 
       &--1,
       &--4 {
@@ -48,6 +52,15 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link:not(:last-child) {
+    margin-bottom: 1rem;
   }
 
   .project-image {

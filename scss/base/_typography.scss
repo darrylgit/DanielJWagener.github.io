@@ -27,4 +27,15 @@ body {
     font-size: 2rem;
     color: $color-text-primary;
   }
+
+  &__link {
+    color: $color-text-primary;
+    font-size: 2.5rem;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+      text-decoration: none;
+    }
+  }
 }
