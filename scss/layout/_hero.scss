@@ -64,18 +64,9 @@
   &__link {
     font-size: 4rem;
 
-    transition: transform 0.2s;
-
-    &:hover {
-      // backface-visibility and translateZ attempt to fix blurriness during transition.
-      // It still looks blurry on my machine, but maybe it'll look better on machines with
-      // better graphics cards
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      transform: scale(1.1) translateZ(0);
-
-      text-decoration: none;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &:not(:last-child) {
       margin-right: 3rem;
@@ -85,9 +76,18 @@
       color: $color-white;
     }
 
+    &--label {
+      font-size: 1.6rem;
+      visibility: hidden;
+    }
+
+    &:hover .hero__link--label {
+      visibility: visible;
+    }
+
     @media only screen and (hover: none) {
-      &:hover {
-        transform: scale(1);
+      &:hover .hero__link--label {
+        visibility: hidden;
       }
     }
   }
