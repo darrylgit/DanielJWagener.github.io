@@ -1,7 +1,7 @@
 .navbar {
   background-color: transparent;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   z-index: 4;
   margin-top: 1.5rem;
@@ -20,6 +20,10 @@
     .nav-link {
       color: $color-white;
       text-decoration: none;
+
+      &:hover {
+        color: $color-primary-light;
+      }
     }
   }
 }

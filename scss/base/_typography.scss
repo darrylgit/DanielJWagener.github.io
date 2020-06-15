@@ -20,6 +20,26 @@ h3 {
   &__tagline li {
     font-size: 3.2rem;
   }
+
+  @media only screen and (max-width: 35em) {
+    &__name {
+      font-size: 6rem;
+    }
+
+    &__tagline li {
+      font-size: 2.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 23.75em) {
+    &__name {
+      font-size: 7rem;
+    }
+
+    &__tagline li {
+      font-size: 2.8rem;
+    }
+  }
 }
 
 .about {

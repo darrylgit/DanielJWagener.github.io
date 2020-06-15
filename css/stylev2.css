@@ -31,6 +31,12 @@ html {
     background-color: #bbdefb; }
     html ::-webkit-scrollbar-thumb:vertical:active {
       background-color: #cde7fc; }
+  @media only screen and (max-width: 35em) {
+    html {
+      font-size: 57.5%; } }
+  @media only screen and (max-width: 23.75em) {
+    html {
+      font-size: 52.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -52,6 +58,18 @@ h3 {
 
 .hero__tagline li {
   font-size: 3.2rem; }
+
+@media only screen and (max-width: 35em) {
+  .hero__name {
+    font-size: 6rem; }
+  .hero__tagline li {
+    font-size: 2.8rem; } }
+
+@media only screen and (max-width: 23.75em) {
+  .hero__name {
+    font-size: 7rem; }
+  .hero__tagline li {
+    font-size: 2.8rem; } }
 
 .about__description {
   font-size: 2.2rem; }
@@ -170,7 +188,7 @@ h3 {
 .navbar {
   background-color: transparent;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   z-index: 4;
   margin-top: 1.5rem; }
@@ -185,6 +203,8 @@ h3 {
     .navbar .nav-item .nav-link {
       color: #fff;
       text-decoration: none; }
+      .navbar .nav-item .nav-link:hover {
+        color: #bbdefb; }
 
 .about {
   background-color: #bdbdbd;
@@ -247,7 +267,7 @@ h3 {
 .hero {
   background-image: linear-gradient(to right, rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8)), url(../img/hong-kong-1990268_1920.jpg);
   background-size: cover;
-  padding: 100px 0;
+  padding: 10rem 5rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   height: 125vh;
@@ -264,15 +284,23 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     animation: moveInHero 1s ease-out; }
   .hero__tagline {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem; }
+    .hero__tagline li {
+      width: 16rem;
+      text-align: center; }
+      @media only screen and (max-width: 26.25em) {
+        .hero__tagline li {
+          width: 12rem; } }
   .hero__links {
     display: flex;
     justify-content: center;
@@ -292,20 +320,6 @@ h3 {
     @media only screen and (hover: none) {
       .hero__link:hover {
         transform: scale(1); } }
-
-@media (max-width: 354.98px) {
-  .navbar-brand h1 {
-    font-size: 1.3em; }
-  .display-3 {
-    font-size: 3em; } }
-
-@media (max-width: 767.98px) {
-  #about {
-    text-align: center; } }
-
-@media (max-width: 991.98px) {
-  #about .row {
-    margin-bottom: 40px; } }
 
 #portfolio {
   padding: 100px 0; }
