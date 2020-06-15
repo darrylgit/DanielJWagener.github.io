@@ -214,6 +214,7 @@ h3 {
   padding: 50vh 5rem 25vh 5rem;
   height: 125vh;
   margin-top: -50vh;
+  min-height: 1000px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
   .about__headshot {
@@ -224,6 +225,15 @@ h3 {
   .about__description {
     width: 60%;
     margin-left: 2rem; }
+  @media only screen and (max-width: 40em) {
+    .about {
+      flex-direction: column;
+      padding: 32vh 5rem 25vh 5rem;
+      height: 125vh;
+      margin-top: -30vh; }
+      .about__description {
+        width: 85%;
+        margin-left: 0; } }
 
 #contact {
   background-color: #454857;
