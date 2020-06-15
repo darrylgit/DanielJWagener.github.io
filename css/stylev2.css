@@ -89,7 +89,8 @@ h3 {
 .flipcard__link {
   color: #212121;
   font-size: 2.5rem;
-  transition: transform 0.2s; }
+  transition: transform 0.2s;
+  text-decoration: none; }
   .flipcard__link:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -338,9 +339,10 @@ h3 {
   #portfolio .row {
     margin-bottom: 70px; }
   #portfolio h2 {
-    color: #454857;
+    color: #212121;
     margin-bottom: 5rem;
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-align: center; }
   #portfolio .flipcard-container {
     display: flex;
     justify-content: space-around;

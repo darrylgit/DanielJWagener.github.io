@@ -69,6 +69,7 @@ h3 {
     color: $color-text-primary;
     font-size: 2.5rem;
     transition: transform 0.2s;
+    text-decoration: none;
 
     &:hover {
       // backface-visibility and translateZ attempt to fix blurriness during transition.
