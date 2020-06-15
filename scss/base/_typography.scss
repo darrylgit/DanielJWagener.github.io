@@ -5,6 +5,12 @@ body {
   color: $color-text-primary;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
 .hero {
   &__name {
     font-size: 7rem;
