@@ -65,45 +65,22 @@
 
   .project-image {
     background-size: cover;
-
     background-position: center;
-    // width: 100%;
-    // height: 100%;
 
     &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-dark-overlay,
-          $color-primary-light-overlay
-        ),
-        url('../../img/geckrello.png');
+      @include flipcard-overlay-primary('../../img/geckrello.png');
     }
 
     &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-dark-overlay,
-          $color-secondary-light-overlay
-        ),
-        url('../../img/calculator.png');
+      @include flipcard-overlay-secondary('../../img/calculator.png');
     }
 
     &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-secondary-dark-overlay,
-          $color-secondary-light-overlay
-        ),
-        url('../../img/mapbox.png');
+      @include flipcard-overlay-secondary('../../img/mapbox.png');
     }
 
     &--4 {
-      background-image: linear-gradient(
-          to right bottom,
-          $color-primary-dark-overlay,
-          $color-primary-light-overlay
-        ),
-        url('../../img/blender.png');
+      @include flipcard-overlay-primary('../../img/blender.png');
     }
   }
 
@@ -138,45 +115,22 @@
   @media only screen and (max-width: 62.5em) {
     .project-image {
       background-size: cover;
-
       background-position: center;
-      // width: 100%;
-      // height: 100%;
 
       &--1 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-primary-dark-overlay,
-            $color-primary-light-overlay
-          ),
-          url('../../img/geckrello.med.png');
+        @include flipcard-overlay-primary('../../img/geckrello.med.png');
       }
 
       &--2 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-dark-overlay,
-            $color-secondary-light-overlay
-          ),
-          url('../../img/calculator.med.png');
+        @include flipcard-overlay-secondary('../../img/calculator.med.png');
       }
 
       &--3 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-dark-overlay,
-            $color-secondary-light-overlay
-          ),
-          url('../../img/mapbox.med.png');
+        @include flipcard-overlay-secondary('../../img/mapbox.med.png');
       }
 
       &--4 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-primary-dark-overlay,
-            $color-primary-light-overlay
-          ),
-          url('../../img/blender.med.png');
+        @include flipcard-overlay-primary('../../img/blender.med.png');
       }
     }
   }
@@ -206,45 +160,22 @@
 
     .project-image {
       background-size: cover;
-
       background-position: center;
-      // width: 100%;
-      // height: 100%;
 
       &--1 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-primary-dark-overlay,
-            $color-primary-light-overlay
-          ),
-          url('../../img/geckrello.small.png');
+        @include flipcard-overlay-primary('../../img/geckrello.small.png');
       }
 
       &--2 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-dark-overlay,
-            $color-secondary-light-overlay
-          ),
-          url('../../img/calculator.small.png');
+        @include flipcard-overlay-secondary('../../img/calculator.small.png');
       }
 
       &--3 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-secondary-dark-overlay,
-            $color-secondary-light-overlay
-          ),
-          url('../../img/mapbox.small.png');
+        @include flipcard-overlay-secondary('../../img/mapbox.small.png');
       }
 
       &--4 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-primary-dark-overlay,
-            $color-primary-light-overlay
-          ),
-          url('../../img/blender.small.png');
+        @include flipcard-overlay-primary('../../img/blender.small.png');
       }
     }
   }

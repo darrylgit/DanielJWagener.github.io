@@ -1,0 +1,17 @@
+@mixin flipcard-overlay-primary($image) {
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary-dark-overlay,
+      $color-primary-light-overlay
+    ),
+    url($image);
+}
+
+@mixin flipcard-overlay-secondary($image) {
+  background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-dark-overlay,
+      $color-secondary-light-overlay
+    ),
+    url($image);
+}
