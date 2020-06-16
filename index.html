@@ -78,6 +78,7 @@
             </li>
           </ul>
         </div>
+        <i class="fas fa-angle-down hero__cue"></i>
       </div>
     </section>
 
@@ -285,9 +286,18 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      let userHasScrolled = false;
+
       $(window).bind('scroll', function () {
+        // User knows to scroll, no need to show cue
+        userHasScrolled = true;
+
+        // Fade out cue if it was displayed
+        $('.hero__cue').fadeOut(400);
+
         let scrollPosition = $(window).scrollTop();
 
+        // Fade out navbar on scroll
         if (scrollPosition <= 100) {
           $('.navbar').css('opacity', 1);
         } else if (scrollPosition > 100 && scrollPosition < 200) {
@@ -296,6 +306,13 @@
           $('.navbar').css('opacity', 0);
         }
       });
+
+      setTimeout(function () {
+        // If user hasn't scrolled after 3 seconds, give them a cue
+        if (!userHasScrolled) {
+          $('.hero__cue').fadeIn(400);
+        }
+      }, 3000);
     </script>
   </body>
 </html>
