@@ -154,4 +154,8 @@
       order: 3;
     }
   }
+
+  @media only screen and (max-width: 23.75em) {
+    width: 90%;
+  }
 }

@@ -29,8 +29,12 @@
     height: 125vh;
     margin-top: -30vh;
 
+    &__headshot {
+      margin-bottom: 2rem;
+    }
+
     &__description {
-      width: 85%;
+      width: 90%;
       margin-left: 0;
     }
   }
