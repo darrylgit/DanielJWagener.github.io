@@ -286,10 +286,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // Define custom vh property to get 100vh to work with Chrome on mobile
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+
       let userHasScrolled = false;
 
       $(window).bind('scroll', function () {
-        // User knows to scroll, no need to show cue
+        // Don't show cue if user has scrolled
         userHasScrolled = true;
 
         // Fade out cue if it was displayed

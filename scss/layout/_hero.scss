@@ -12,7 +12,9 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
+  // Set height using custom vh property and a fallback:
   height: 125vh;
+  height: calc(var(--vh, 1vh) * 125);
   z-index: 2;
   position: relative;
 

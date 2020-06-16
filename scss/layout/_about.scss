@@ -4,7 +4,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 50vh 5rem 25vh 5rem;
+
+  // Set height using custom vh property and a fallback:
   height: 125vh;
+  height: calc(var(--vh, 1vh) * 125);
+
   margin-top: -50vh;
   min-height: 1000px;
 
