@@ -247,6 +247,7 @@ h3 {
   height: 125vh;
   height: calc(var(--vh, 1vh) * 125);
   margin-top: -50vh;
+  margin-top: calc(var(--vh, 1vh) * -50);
   min-height: 1000px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
