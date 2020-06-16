@@ -54,16 +54,21 @@ h3 {
 
 .hero__name {
   font-size: 7rem;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.3; }
 
 .hero__tagline li {
   font-size: 3.2rem; }
 
-@media only screen and (max-width: 35em) {
+@media only screen and (max-width: 35.75em) {
   .hero__name {
-    font-size: 6rem; }
+    font-size: 6.4rem; }
   .hero__tagline li {
     font-size: 2.8rem; } }
+
+@media only screen and (max-width: 30.5em) {
+  .hero__name {
+    margin-bottom: 2rem; } }
 
 @media only screen and (max-width: 23.75em) {
   .hero__name {
@@ -322,9 +327,6 @@ h3 {
     .hero__tagline li {
       width: 16rem;
       text-align: center; }
-      @media only screen and (max-width: 26.25em) {
-        .hero__tagline li {
-          width: 12rem; } }
   .hero__links {
     display: flex;
     justify-content: center;
@@ -343,9 +345,12 @@ h3 {
       visibility: hidden; }
     .hero__link:hover .hero__link--label {
       visibility: visible; }
-    @media only screen and (hover: none) {
-      .hero__link:hover .hero__link--label {
-        visibility: hidden; } }
+  @media only screen and (hover: none) {
+    .hero__link:hover .hero__link--label {
+      visibility: hidden; } }
+  @media only screen and (max-width: 39.75em) {
+    .hero__tagline {
+      display: none; } }
 
 #portfolio {
   padding: 10rem 0; }

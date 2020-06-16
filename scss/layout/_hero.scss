@@ -48,10 +48,6 @@
     li {
       width: 16rem;
       text-align: center;
-
-      @media only screen and (max-width: 26.25em) {
-        width: 12rem;
-      }
     }
   }
 
@@ -84,11 +80,17 @@
     &:hover .hero__link--label {
       visibility: visible;
     }
+  }
 
-    @media only screen and (hover: none) {
-      &:hover .hero__link--label {
-        visibility: hidden;
-      }
+  @media only screen and (hover: none) {
+    &__link:hover .hero__link--label {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 39.75em) {
+    &__tagline {
+      display: none;
     }
   }
 }
