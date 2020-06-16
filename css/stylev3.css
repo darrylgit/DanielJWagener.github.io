@@ -368,6 +368,9 @@ h3 {
       visibility: hidden; }
     .hero__link:hover .hero__link--label {
       visibility: visible; }
+  @media only screen and (max-width: 65em) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8)), url(../img/hong-kong-1990268_1280.jpg); } }
   @media only screen and (hover: none) {
     .hero__link:hover .hero__link--label {
       visibility: hidden; } }

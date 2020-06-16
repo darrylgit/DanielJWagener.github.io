@@ -82,6 +82,15 @@
     }
   }
 
+  @media only screen and (max-width: 65em) {
+    background-image: linear-gradient(
+        to right,
+        $color-primary-dark-overlay,
+        $color-primary-dark-overlay
+      ),
+      url(../img/hong-kong-1990268_1280.jpg);
+  }
+
   @media only screen and (hover: none) {
     &__link:hover .hero__link--label {
       visibility: hidden;
