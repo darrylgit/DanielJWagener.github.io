@@ -107,7 +107,7 @@ h3 {
       color: #212121; } }
 
 .flipcard {
-  perspective: 200rem;
+  perspective: 201rem;
   -moz-perspective: 200rem;
   position: relative;
   width: 45%;
@@ -153,7 +153,7 @@ h3 {
     background-size: cover;
     background-position: center; }
     .flipcard .project-image--1 {
-      background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/geckorello.png"); }
+      background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/geckrello.png"); }
     .flipcard .project-image--2 {
       background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/calculator.png"); }
     .flipcard .project-image--3 {
@@ -179,7 +179,19 @@ h3 {
           border-radius: 0 0 1rem 1rem; }
       .flipcard:hover .flipcard__side--front {
         transform: rotateY(0); } }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 62.5em) {
+    .flipcard .project-image {
+      background-size: cover;
+      background-position: center; }
+      .flipcard .project-image--1 {
+        background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/geckrello.small.png"); }
+      .flipcard .project-image--2 {
+        background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/calculator.med.png"); }
+      .flipcard .project-image--3 {
+        background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/mapbox.med.png"); }
+      .flipcard .project-image--4 {
+        background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/blender.med.png"); } }
+  @media only screen and (max-width: 40em) {
     .flipcard {
       width: 80%; }
       .flipcard--1 {
@@ -192,7 +204,18 @@ h3 {
         order: 3; } }
   @media only screen and (max-width: 23.75em) {
     .flipcard {
-      width: 90%; } }
+      width: 90%; }
+      .flipcard .project-image {
+        background-size: cover;
+        background-position: center; }
+        .flipcard .project-image--1 {
+          background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/geckrello.small.png"); }
+        .flipcard .project-image--2 {
+          background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/calculator.small.png"); }
+        .flipcard .project-image--3 {
+          background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/mapbox.small.png"); }
+        .flipcard .project-image--4 {
+          background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/blender.small.png"); } }
 
 .navbar {
   background-color: transparent;
