@@ -93,6 +93,13 @@
 
     font-size: 4rem;
     display: none;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 
   @media only screen and (max-width: 65em) {
