@@ -373,7 +373,7 @@ h3 {
     .hero__link:hover .hero__link--label {
       visibility: visible; }
   .hero__cue {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
     position: absolute;
     bottom: 5rem;
