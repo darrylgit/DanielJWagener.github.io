@@ -17,6 +17,22 @@
 }
 
 @mixin responsive-clip-path($bottom-right-percent) {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% $bottom-right-percent, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% $bottom-right-percent, 0% 100%);
+  // Sass math is wack
+
+  // Set height using custom vh property and a fallback:
+  height: calc(1vh * 100 / (#{$bottom-right-percent} / 100));
+  height: calc(var(--vh, 1vh) * 100 / (#{$bottom-right-percent} / 100));
+
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% percentage($bottom-right-percent / 100),
+    0% 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% percentage($bottom-right-percent / 100),
+    0% 100%
+  );
 }
