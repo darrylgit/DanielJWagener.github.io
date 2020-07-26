@@ -15,3 +15,8 @@
     ),
     url($image);
 }
+
+@mixin responsive-clip-path($bottom-right-percent) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% $bottom-right-percent, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% $bottom-right-percent, 0% 100%);
+}

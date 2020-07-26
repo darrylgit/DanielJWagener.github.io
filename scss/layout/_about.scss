@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50vh 5rem 25vh 5rem;
+  padding: 40vh 5rem 25vh 5rem;
 
   // Set height using custom vh property and a fallback:
   height: 125vh;
   height: calc(var(--vh, 1vh) * 125);
 
-  margin-top: -50vh;
-  margin-top: calc(var(--vh, 1vh) * -50);
+  margin-top: -40vh;
+  margin-top: calc(var(--vh, 1vh) * -40);
 
   min-height: 1000px;
 
@@ -29,7 +29,7 @@
     margin-left: 2rem;
   }
 
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 46.25em) {
     flex-direction: column;
     padding: 32vh 5rem 25vh 5rem;
     height: 125vh;
@@ -45,7 +45,9 @@
     }
   }
 
-  @media only screen and (min-width: 100em) {
-    padding: 45vh 10% 25vh 10%;
+  // Soften clip-path angle on smaller screens
+  @media only screen and (max-width: 36.875em) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
   }
 }
