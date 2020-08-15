@@ -4,18 +4,12 @@
   justify-content: space-around;
   align-items: center;
   padding: 40vh 5rem 25vh 5rem;
-
-  // Set height using custom vh property and a fallback:
-  height: 125vh;
-  height: calc(var(--vh, 1vh) * 125);
-
   margin-top: -40vh;
   margin-top: calc(var(--vh, 1vh) * -40);
 
-  min-height: 1000px;
+  @include bottom-slant-clip-path(80);
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  min-height: 1000px;
 
   &__headshot {
     width: 25rem;
@@ -31,12 +25,14 @@
 
   @media only screen and (max-width: 46.25em) {
     flex-direction: column;
-    padding: 32vh 5rem 25vh 5rem;
+    justify-content: center;
     height: 125vh;
+    padding: 28vh 5rem 25vh 5rem;
     margin-top: -30vh;
+    margin-top: calc(var(--vh, 1vh) * -30);
 
     &__headshot {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
 
     &__description {
@@ -47,7 +43,17 @@
 
   // Soften clip-path angle on smaller screens
   @media only screen and (max-width: 36.875em) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    @include bottom-slant-clip-path(87);
+    padding: 0 5rem 0 5rem;
+    margin-top: -17vh;
+    margin-top: calc(var(--vh, 1vh) * -17);
+  }
+
+  // Soften clip-path angle on smaller screens
+  @media only screen and (max-width: 23.45em) {
+    @include bottom-slant-clip-path(92);
+    padding: 5rem 2rem 0 2rem;
+    margin-top: -17vh;
+    margin-top: calc(var(--vh, 1vh) * -17);
   }
 }

@@ -259,13 +259,13 @@ h3 {
   justify-content: space-around;
   align-items: center;
   padding: 40vh 5rem 25vh 5rem;
-  height: 125vh;
-  height: calc(var(--vh, 1vh) * 125);
   margin-top: -40vh;
   margin-top: calc(var(--vh, 1vh) * -40);
-  min-height: 1000px;
+  height: calc(1vh * 100 / (80 / 100));
+  height: calc(var(--vh, 1vh) * 100 / (80 / 100));
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  min-height: 1000px; }
   .about__headshot {
     width: 25rem;
     height: auto;
@@ -277,18 +277,34 @@ h3 {
   @media only screen and (max-width: 46.25em) {
     .about {
       flex-direction: column;
-      padding: 32vh 5rem 25vh 5rem;
+      justify-content: center;
       height: 125vh;
-      margin-top: -30vh; }
+      padding: 28vh 5rem 25vh 5rem;
+      margin-top: -30vh;
+      margin-top: calc(var(--vh, 1vh) * -30); }
       .about__headshot {
-        margin-bottom: 2rem; }
+        margin-bottom: 4rem; }
       .about__description {
         width: 90%;
         margin-left: 0; } }
   @media only screen and (max-width: 36.875em) {
     .about {
+      height: calc(1vh * 100 / (87 / 100));
+      height: calc(var(--vh, 1vh) * 100 / (87 / 100));
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+      padding: 0 5rem 0 5rem;
+      margin-top: -17vh;
+      margin-top: calc(var(--vh, 1vh) * -17); } }
+  @media only screen and (max-width: 23.45em) {
+    .about {
+      height: calc(1vh * 100 / (92 / 100));
+      height: calc(var(--vh, 1vh) * 100 / (92 / 100));
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+      padding: 5rem 2rem 0 2rem;
+      margin-top: -17vh;
+      margin-top: calc(var(--vh, 1vh) * -17); } }
 
 #contact {
   background-color: #454857;
@@ -412,6 +428,18 @@ h3 {
   @media only screen and (max-width: 39.75em) {
     .hero__tagline {
       display: none; } }
+  @media only screen and (max-width: 36.875em) {
+    .hero {
+      height: calc(1vh * 100 / (87 / 100));
+      height: calc(var(--vh, 1vh) * 100 / (87 / 100));
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%); } }
+  @media only screen and (max-width: 23.45em) {
+    .hero {
+      height: calc(1vh * 100 / (92 / 100));
+      height: calc(var(--vh, 1vh) * 100 / (92 / 100));
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%); } }
 
 #portfolio {
   padding: 10rem 0; }

@@ -16,7 +16,7 @@
     url($image);
 }
 
-@mixin responsive-clip-path($bottom-right-percent) {
+@mixin bottom-slant-clip-path($bottom-right-percent) {
   // Sass math is wack
 
   // Set height using custom vh property and a fallback:

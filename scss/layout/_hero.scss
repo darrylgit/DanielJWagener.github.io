@@ -9,13 +9,8 @@
     url(../img/hong-kong-1990268_1920.jpg);
   background-size: cover;
   padding: 10rem 5rem;
-  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 
-  // // Set height using custom vh property and a fallback:
-  // height: 125vh;
-  // height: calc(var(--vh, 1vh) * 125);
-  @include responsive-clip-path(80);
+  @include bottom-slant-clip-path(80);
 
   z-index: 2;
   position: relative;
@@ -127,5 +122,15 @@
     &__tagline {
       display: none;
     }
+  }
+
+  // Soften clip-path angle on smaller screens
+  @media only screen and (max-width: 36.875em) {
+    @include bottom-slant-clip-path(87);
+  }
+
+  // Soften clip-path angle on smaller screens
+  @media only screen and (max-width: 23.45em) {
+    @include bottom-slant-clip-path(92);
   }
 }
