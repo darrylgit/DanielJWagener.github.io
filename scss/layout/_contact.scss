@@ -11,6 +11,11 @@
   -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 
+  @media only screen and (max-width: 34.375em) {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  }
+
   .row {
     margin-top: 10rem;
   }
@@ -59,8 +64,6 @@
 
         &:hover {
           // backface-visibility and translateZ attempt to fix blurriness during transition.
-          // It still looks blurry on my machine, but maybe it'll look better on machines with
-          // better graphics cards
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
           transform: scale(1.1) translateZ(0);
