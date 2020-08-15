@@ -59,6 +59,16 @@
     flex-direction: column;
   }
 
+  &__link {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 1rem;
+      font-size: 3.5rem;
+    }
+  }
+
   &__link:not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -68,19 +78,19 @@
     background-position: center;
 
     &--1 {
-      @include flipcard-overlay-primary('../../img/geckrello.png');
+      @include flipcard-overlay-primary("../../img/geckrello.png");
     }
 
     &--2 {
-      @include flipcard-overlay-secondary('../../img/calculator.png');
+      @include flipcard-overlay-secondary("../../img/calculator.png");
     }
 
     &--3 {
-      @include flipcard-overlay-secondary('../../img/mapbox.png');
+      @include flipcard-overlay-secondary("../../img/mapbox.png");
     }
 
     &--4 {
-      @include flipcard-overlay-primary('../../img/blender.png');
+      @include flipcard-overlay-primary("../../img/blender.png");
     }
   }
 
@@ -118,19 +128,19 @@
       background-position: center;
 
       &--1 {
-        @include flipcard-overlay-primary('../../img/geckrello.med.png');
+        @include flipcard-overlay-primary("../../img/geckrello.med.png");
       }
 
       &--2 {
-        @include flipcard-overlay-secondary('../../img/calculator.med.png');
+        @include flipcard-overlay-secondary("../../img/calculator.med.png");
       }
 
       &--3 {
-        @include flipcard-overlay-secondary('../../img/mapbox.med.png');
+        @include flipcard-overlay-secondary("../../img/mapbox.med.png");
       }
 
       &--4 {
-        @include flipcard-overlay-primary('../../img/blender.med.png');
+        @include flipcard-overlay-primary("../../img/blender.med.png");
       }
     }
   }
@@ -163,19 +173,19 @@
       background-position: center;
 
       &--1 {
-        @include flipcard-overlay-primary('../../img/geckrello.small.png');
+        @include flipcard-overlay-primary("../../img/geckrello.small.png");
       }
 
       &--2 {
-        @include flipcard-overlay-secondary('../../img/calculator.small.png');
+        @include flipcard-overlay-secondary("../../img/calculator.small.png");
       }
 
       &--3 {
-        @include flipcard-overlay-secondary('../../img/mapbox.small.png');
+        @include flipcard-overlay-secondary("../../img/mapbox.small.png");
       }
 
       &--4 {
-        @include flipcard-overlay-primary('../../img/blender.small.png');
+        @include flipcard-overlay-primary("../../img/blender.small.png");
       }
     }
   }

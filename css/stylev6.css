@@ -147,6 +147,12 @@ h3 {
   .flipcard__links-container {
     display: flex;
     flex-direction: column; }
+  .flipcard__link {
+    display: flex;
+    align-items: center; }
+    .flipcard__link i {
+      margin-right: 1rem;
+      font-size: 3.5rem; }
   .flipcard__link:not(:last-child) {
     margin-bottom: 1rem; }
   .flipcard .project-image {
