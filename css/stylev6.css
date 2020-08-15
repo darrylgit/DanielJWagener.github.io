@@ -296,13 +296,16 @@ h3 {
       padding: 0 5rem 0 5rem;
       margin-top: -17vh;
       margin-top: calc(var(--vh, 1vh) * -17); } }
+  @media only screen and (max-width: 26.875em) {
+    .about {
+      padding: 5rem 2rem 0 2rem; } }
   @media only screen and (max-width: 23.45em) {
     .about {
       height: calc(1vh * 100 / (92 / 100));
       height: calc(var(--vh, 1vh) * 100 / (92 / 100));
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
-      padding: 5rem 2rem 0 2rem;
+      padding: 6rem 1.5rem 0 1.5rem;
       margin-top: -17vh;
       margin-top: calc(var(--vh, 1vh) * -17); } }
 

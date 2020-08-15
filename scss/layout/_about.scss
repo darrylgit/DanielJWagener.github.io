@@ -49,10 +49,14 @@
     margin-top: calc(var(--vh, 1vh) * -17);
   }
 
+  @media only screen and (max-width: 26.875em) {
+    padding: 5rem 2rem 0 2rem;
+  }
+
   // Soften clip-path angle on smaller screens
   @media only screen and (max-width: 23.45em) {
     @include bottom-slant-clip-path(92);
-    padding: 5rem 2rem 0 2rem;
+    padding: 6rem 1.5rem 0 1.5rem;
     margin-top: -17vh;
     margin-top: calc(var(--vh, 1vh) * -17);
   }
