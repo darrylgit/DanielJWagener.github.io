@@ -20,7 +20,7 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/stylev6.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Daniel Wagener - Portfolio</title>
   </head>
   <body>
@@ -324,39 +324,39 @@
 
       // Define custom vh property to get 100vh to work with Chrome on mobile
       let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
 
       // Reset value on window resize
-      window.addEventListener("resize", () => {
+      window.addEventListener('resize', () => {
         vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty("--vh", `${vh}px`);
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
       });
 
       let userHasScrolled = false;
 
-      $(window).bind("scroll", function () {
+      $(window).bind('scroll', function () {
         // Don't show cue if user has scrolled
         userHasScrolled = true;
 
         // Fade out cue if it was displayed
-        $(".hero__cue").fadeOut(400);
+        $('.hero__cue').fadeOut(400);
 
         let scrollPosition = $(window).scrollTop();
 
         // Fade out navbar on scroll
         if (scrollPosition <= 100) {
-          $(".navbar").css("opacity", 1);
+          $('.navbar').css('opacity', 1);
         } else if (scrollPosition > 100 && scrollPosition < 200) {
-          $(".navbar").css("opacity", 1 + (100 - scrollPosition) / 100);
+          $('.navbar').css('opacity', 1 + (100 - scrollPosition) / 100);
         } else {
-          $(".navbar").css("opacity", 0);
+          $('.navbar').css('opacity', 0);
         }
       });
 
       setTimeout(function () {
         // If user hasn't scrolled after 3 seconds, give them a cue
         if (!userHasScrolled) {
-          $(".hero__cue").fadeIn(400);
+          $('.hero__cue').fadeIn(400);
         }
       }, 3000);
     </script>
