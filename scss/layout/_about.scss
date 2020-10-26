@@ -3,13 +3,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40vh 5rem 25vh 5rem;
-  margin-top: -40vh;
-  margin-top: calc(var(--vh, 1vh) * -40);
+  padding: 20rem 10rem;
+  // margin-top: -40vh;
+  // margin-top: calc(var(--vh, 1vh) * -40);
 
-  @include bottom-slant-clip-path(80);
+  // @include bottom-slant-clip-path(80);
 
-  min-height: 1000px;
+  // min-height: 1000px;
 
   &__headshot {
     width: 25rem;
