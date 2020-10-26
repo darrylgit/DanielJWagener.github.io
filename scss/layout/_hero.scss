@@ -133,4 +133,11 @@
   @media only screen and (max-width: 23.45em) {
     @include bottom-slant-clip-path(92);
   }
+
+  // Mobile landscape
+  @media screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) and (hover: none) and (max-height: 40em) {
+    &__tagline {
+      display: none;
+    }
+  }
 }
