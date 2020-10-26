@@ -1,4 +1,15 @@
 .about {
+  .background-fill-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+    transform: translateY(-100%);
+    background-color: $color-divider;
+  }
+
+  position: relative;
   background-color: $color-divider;
   display: flex;
   justify-content: space-around;
