@@ -1,6 +1,7 @@
 #contact {
   background-color: $dark-motion;
-  padding: 25rem 1rem 15rem 1rem;
+  // margin-top: -30rem;
+  padding: 15rem 1rem 15rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,13 +9,13 @@
 
   color: $color-white;
 
-  -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  // -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  // clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 
-  @media only screen and (max-width: 34.375em) {
-    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-  }
+  // @media only screen and (max-width: 34.375em) {
+  //   -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  //   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  // }
 
   .row {
     margin-top: 10rem;
