@@ -315,12 +315,6 @@
         </li>
       </ul>
     </section>
-
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-      crossorigin="anonymous"
-    ></script> -->
     <script>
       // Make sure page loads scrolled all the way to the top (not sure why this isn't the default on Chrome mobile, but oh well)
       window.scrollTo(0, 0);
@@ -337,11 +331,13 @@
 
       let userHasScrolled = false;
 
+      const heroCue = document.querySelector('.hero__cue');
+
       window.addEventListener('scroll', () => {
         userHasScrolled = true;
 
-        const heroCue = document.querySelector('.hero__cue');
-        heroCue.style.opacity = 0;
+        // If hero cue has been rendered, fade it out on scroll
+        heroCue.style.animation = 'fadeOutHeroCue .4s forwards';
 
         // Fade out navbar on scroll
         let scrollPosition = window.scrollY;
@@ -357,12 +353,12 @@
       });
 
       setTimeout(function () {
-        // If user hasn't scrolled after 3 seconds, give them a cue
+        // If user hasn't scrolled after 2 seconds, give them a cue
         if (!userHasScrolled) {
-          const heroCue = document.querySelector('.hero__cue');
           heroCue.style.display = 'block';
+          heroCue.style.animation = 'fadeInHeroCue .4s forwards';
         }
-      }, 3000);
+      }, 2000);
     </script>
   </body>
 </html>

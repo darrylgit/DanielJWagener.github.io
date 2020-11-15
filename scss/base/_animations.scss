@@ -9,3 +9,30 @@
     transform: translateY(0);
   }
 }
+
+@keyframes fadeInHeroCue {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutHeroCue {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
